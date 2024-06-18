@@ -24,6 +24,7 @@ p {
 }
 
 .header-section {
+    height: 100vh;
     position: relative;
     overflow: hidden; /* ensure image doesn't overflow the container */
     display: flex;
