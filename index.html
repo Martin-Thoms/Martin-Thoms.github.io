@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta name="description" content="Martin Thoms ist ein Theologe, Prediger, Autor, Dozent und Berater" />
+  <meta name="description" content="Martin Thoms ist ein Theologe, Prediger, Autor, Dozent und Berater"/>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martin Thoms - Theologe, Prediger, Autor, Dozent, Berater</title>
@@ -52,6 +52,7 @@
     section#about {
       overflow: clip;
     }
+
     #martin-bild-container {
       overflow-x: visible;
       width: 100%;
@@ -77,6 +78,7 @@
       #martin-bild {
         max-width: 54vw;
       }
+
       #martin-bild-container {
         max-height: 30em;
         justify-content: left;
@@ -87,6 +89,7 @@
       #martin-bild {
         max-width: 53vw;
       }
+
       #martin-bild-container {
         max-height: 30em;
         justify-content: left;
@@ -97,6 +100,7 @@
       #martin-bild {
         max-width: 45vw;
       }
+
       #martin-bild-container {
         max-height: 20em;
       }
@@ -106,6 +110,7 @@
       #martin-bild {
         max-width: 35vw;
       }
+
       #martin-bild-container {
       }
     }
@@ -128,16 +133,44 @@
       top: 0;
     }
 
-    /* Angebote-Karten */
-    #angebote p {
-      height: 8em;
+
+    /* Breakpoints
+      xs: 0,
+      sm: 576px,
+      md: 768px,
+      lg: 992px,
+      xl: 1200px,
+      xxl: 1400px
+    */
+
+    /* Aktivitäten-Karten */
+    #aktivitaeten .card {
+      height: unset;
     }
 
-    @media (min-width: 334px) {
-      #angebote p {
+    @media (min-width: 576px) {
+      #aktivitaeten .card {
+        height: 10em;
+      }
+    }
+
+    @media (min-width: 768px) {
+      #aktivitaeten .card {
+        height: 7em;
+      }
+    }
+
+    @media (min-width: 992px) {
+      #aktivitaeten .card {
         height: 6em;
       }
     }
+
+    /* Angebote-Karten */
+    #angebote p {
+      height: unset;
+    }
+
     @media (min-width: 576px) {
       #angebote p {
         height: 8em;
@@ -156,7 +189,7 @@
       height: 2.5em;
     }
 
-    #angebote .card {
+    #angebote .card, #aktivitaeten .card {
       margin-bottom: 30px;
       box-shadow: 3px 3px 4px 4px #00000040;
     }
@@ -181,11 +214,12 @@
 
     </div>
     <hr>
-    <nav class="row d-flex justify-content-between align-items-center">
-      <p class="col-6 col-sm-3 text-center"><a href="#about" class="nav-link text-white">Über mich</a></p>
-      <p class="col-6 col-sm-3 text-center"><a href="#glaube" class="nav-link text-white">Glaube</a></p>
-      <p class="col-6 col-sm-3 text-center"><a href="#angebote" class="nav-link text-white">Angebote</a></p>
-      <p class="col-6 col-sm-3 text-center"><a href="#schwerpunkte" class="nav-link text-white">Schwerpunkte</a></p>
+    <nav class="row d-flex justify-content-between align-items-center gx-0">
+      <p class="col-6 col-sm-2 text-center"><a href="#about" class="nav-link text-white">Über mich</a></p>
+      <p class="col-6 col-sm-2 text-center"><a href="#glaube" class="nav-link text-white">Glaube</a></p>
+      <p class="col-6 col-sm-2 text-center"><a href="#aktivitaeten" class="nav-link text-white">Aktivitäten</a></p>
+      <p class="col-6 col-sm-2 text-center"><a href="#angebote" class="nav-link text-white">Angebote</a></p>
+      <p class="col-6 col-sm-2 text-center"><a href="#schwerpunkte" class="nav-link text-white">Schwerpunkte</a></p>
 
     </nav>
   </div>
@@ -207,8 +241,8 @@
         </p>
         <p class="text-center mt-4">
           <a href="mehr-zu-mir.html">
-            <button class="btn btn-dark text-xxl-center"  style="font-size: 1em">
-                Mehr zu mir
+            <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
+              Mehr zu mir
             </button>
           </a>
         </p>
@@ -241,6 +275,69 @@
     </div>
   </div>
 </section>
+
+<section id="aktivitaeten" class="py-5 bg-light">
+  <div class="container">
+    <h1>
+      Aktivitäten
+      <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
+    </h1>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein Buch</h5>
+            <!--p>„Der gottverlassene Gott“</p-->
+            <a href="https://lit-verlag.de/isbn/978-3-643-15434-7/">Der gottverlassene Gott</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein Auftritt bei Hossa-Talk</h5>
+            <a href="https://hossa-talk.de/234-der-gottverlassene-gott-m-martin-thoms/">
+              #234 Der gottverlassene Gott m. Martin Thoms – Hossa Talk
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Predigt in Würzburg</h5>
+            <a href="https://www.youtube.com/watch?v=kduX545Oomg&t=7s">
+              Diese drei. 2) Der gottverlassene Gott | Martin Thoms
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Blogeintrag bei Lepanto</h5>
+            <a href="https://www.lepanto-verlag.de/der-gottverlassene-gott">
+              Der gottverlassene Gott | LOGBUCH | Lepanto Verlag
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-lg-12">
+        <div class="card teaser">
+          <div class="card-body">
+            <h5 class="card-title">Teaser</h5>
+            <p>
+              März 2025 erscheint mein neues Buch mit dem Titel:
+              <i>„‘Es ist vollbracht!‘ Oder doch nicht? Antwortversuche
+                auf Einwände zur Fantasie der Allversöhnung</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section id="angebote" class="py-5 bg-light">
   <div class="container">
@@ -297,6 +394,17 @@
             <p>Als Redner möchte ich dazu beitragen, dass deine individuelle Lebensfeier ein unvergessliches Erlebnis
               wird.</p>
             <a href="mailto:kontakt@martinthoms.de?subject=Anfrage:%20Individuelle%20Lebensfeier" class="btn btn-dark">Anfrage</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Theologie für Interessierte</h5>
+            <p>
+              Die Allversöhnung (Onlinekurs)
+            </p>
+            <a class="btn disabled">Coming soon</a>
           </div>
         </div>
       </div>
