@@ -144,44 +144,11 @@
       xxl: 1400px
     */
 
-    /* Aktivitäten-Karten */
-    #aktivitaeten .card {
-      height: unset;
-    }
-
-    @media (min-width: 576px) {
-      #aktivitaeten .card {
-        height: 19em;
-      }
-    }
-
-    @media (min-width: 768px) {
-      #aktivitaeten .card {
-        height: 19em;
-      }
-    }
-
-    @media (min-width: 992px) {
-      #aktivitaeten .card {
-        height: 19em;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      #aktivitaeten .card {
-        height: 18em;
-      }
-    }
-
-    @media (min-width: 1400px) {
-      #aktivitaeten .card {
-        height: 18em;
-      }
-    }
-
-    #aktivitaeten .cover {
-      max-height: 5em;
+    #aktivitaeten .card img {
+      object-fit: cover;
+      object-position: center;
       max-width: 100%;
+      max-height: 100%;
     }
 
 
@@ -336,23 +303,23 @@
     </h1>
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein neues Buch</h5>
-            <a href="https://www.eva-leipzig.de/de/es-ist-vollbracht-oder-doch-nicht-2">
-              <img
-                  src="img/cover-es-ist-vollbracht-oder-doch-nicht.jpg"
-                  title="Coverbild"
-                  alt="Coverbild"
-                  class="cover mx-auto d-block my-3"
-              />
-              <div>
-                »Es ist vollbracht!« Oder doch nicht? –
-                Antwortversuche auf Einwände zur Fantasie der Allversöhnung
-              </div>
-            </a>
+        <a href="https://www.eva-leipzig.de/de/es-ist-vollbracht-oder-doch-nicht-2">
+          <div class="card">
+            <img src="img/cover-sq-es-ist-vollbracht-oder-doch-nicht.jpg" style="
+            ">
+            <!--div class="card-body">
+              <img src="img/cover-sq-es-ist-vollbracht-oder-doch-nicht.jpg"
+                   title="Coverbild"
+                   alt="Coverbild"
+                   class="cover mx-auto d-block my-3"
+              style="max-width: 100%; height: auto;"/>
+            </div-->
           </div>
-        </div>
+        </a>
+          <p>Mein neues Buch<br>
+            »Es ist vollbracht!« Oder doch nicht? –
+            Antwortversuche auf Einwände zur Fantasie der Allversöhnung
+          </p>
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card">
