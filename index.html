@@ -39,6 +39,12 @@
       color: #007bff !important;
     }*/
 
+    #werbung-studientag {
+      background: url("img/hintergrund-grau-gold.jpeg");
+      background-size: cover;
+      color: white;
+    }
+
     h1 {
       padding-top: 0.5em;
       padding-bottom: 0.5em;
@@ -194,13 +200,34 @@
       #angebote p {
         height: 8em;
       }
+      #angebote p.kurz {
+        height: 3.6em;
+      }
     }
 
     @media (min-width: 768px) {
       #angebote p {
         height: 10em;
       }
+      #angebote p.kurz {
+        height: 9.4em;
+      }
     }
+
+    @media (min-width: 992px) {
+      #angebote p.kurz {
+        height: 7.1em;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      #angebote p.kurz {
+        height: 9.4em;
+      }
+    }
+    /*#angebote p.kurz {*/
+    /*  height: unset;*/
+    /*}*/
 
     #angebote h5, #aktivitaeten h5 {
       font-size: 1.2em;
@@ -246,7 +273,7 @@
 
 
 <!-- Onlinekurs Werbeblock -->
-<section id="werbung" class="py-3 bg-info">
+<!--section id="werbung" class="py-3 bg-info">
   <div class="container">
     <div class="row border border-2 border-dark rounded">
       <div class="col-12 py-3 px-5 text-center">
@@ -265,6 +292,32 @@
           <a href="onlinekurs.html">
             <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
               Zum Onlinekurs
+            </button>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section-->
+
+<!-- Studientag Werbeblock -->
+<section id="werbung-studientag" class="py-3">
+  <div class="container">
+    <div class="row border border-2 border-white rounded">
+      <div class="col-12 py-3 px-5 text-center">
+        <p class="small">
+          Samstag, 19. Juli 2025 von 10:00 – 18:00 Uhr (digital)
+        </p>
+        <h1 class="pb-4">
+          Studientag Allversöhnung
+        </h1>
+        <p class="mb-0">
+          Eine Reise durch die spannendste Debatte der Theologie
+        </p>
+        <p class="text-center mt-3 mb-0">
+          <a href="studientag.html">
+            <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
+              Zum Studientag
             </button>
           </a>
         </p>
@@ -514,13 +567,20 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title">Theologie für Interessierte</h5>
-            <p>
-              Der 10-Wochen-Onlinekurs zur Allversöhnung:<br>
-              „Es ist vollbracht! … oder doch nicht?“
+            <p class="kurz">
+              Onlinekurse und Studientage
+
+              <!--Der 10-Wochen-Onlinekurs zur Allversöhnung:<br>
+              „Es ist vollbracht! … oder doch nicht?“-->
             </p>
+            <a href="studientag.html" style="text-decoration: none;">
+              <button class="btn btn-dark mt-3">
+                Zum Studientag
+              </button>
+            </a>
             <a href="onlinekurs.html">
-              <button class="btn btn-dark">
-                Zum Kurs
+              <button class="btn btn-dark mt-3">
+                Zum Onlinekurs
               </button>
             </a>
           </div>
