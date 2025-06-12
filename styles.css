@@ -1,0 +1,75 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 1.5em;
+  }
+}
+
+body.gold {
+  background: url("/img/hintergrund-gelb.jpeg") no-repeat fixed center;
+  background-size: cover;
+}
+
+body.risse {
+  background: linear-gradient(#fff8, #fff8), url("/img/hintergrund-grau-gold.jpeg") no-repeat fixed center;
+  background-size: cover;
+  a:not(.bg-dark a) {
+    text-shadow: 0 0 1em white;
+  }
+}
+
+section:nth-of-type(2n) {
+  background-color: #00000010;
+}
+
+.text-gray {
+  color: #cccccc;
+}
+
+.bg-gray .text-gray {
+  color: #aaaaaa;
+}
+
+h1, h2 {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+}
+
+header h1, header .h1 {
+  font-size: 3em;
+}
+
+
+/* Aufzählung ohne bullets */
+ul.no-bullets {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* ... aufzählung */
+ul.checkmark-icons {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.checkmark-icons li {
+  position: relative;
+  padding-left: 24px;
+}
+
+ul.checkmark-icons li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
