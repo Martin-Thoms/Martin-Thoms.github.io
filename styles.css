@@ -26,6 +26,13 @@ body.risse {
     text-shadow: 0 0 1em white;
   }
 }
+body.rot {
+  background: linear-gradient(#fff8, #fff8), linear-gradient(#caa, #caa) no-repeat fixed center;
+  background-size: cover;
+  a:not(.bg-dark a) {
+    text-shadow: 0 0 1em white;
+  }
+}
 
 section:nth-of-type(2n) {
   background-color: #00000010;
