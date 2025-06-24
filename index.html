@@ -8,29 +8,19 @@
   <title>Martin Thoms - Theologe, Prediger, Autor, Dozent, Berater</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
       background-color: #f8f9fa;
     }
 
-    @media (min-width: 768px) {
-      body {
-        font-size: 1.5em;
-      }
-    }
+    /*@media (min-width: 768px) {*/
+    /*  body {*/
+    /*    font-size: 1.5em;*/
+    /*  }*/
+    /*}*/
 
-    .bg-gray {
-      background-color: #dddddd;
-    }
 
-    .text-gray {
-      color: #cccccc;
-    }
-
-    .bg-gray .text-gray {
-      color: #aaaaaa;
-    }
 
     /*.navbar-nav .nav-item .nav-link {
       color: white !important;
@@ -45,17 +35,12 @@
       color: white;
     }
 
-    h1 {
-      padding-top: 0.5em;
-      padding-bottom: 0.5em;
-    }
+    /*h1 {*/
+    /*  padding-bottom: 0.5em;*/
+    /*}*/
 
-    header h1, header .h1 {
-      font-size: 3em;
-    }
 
     /* Bildgröße hackerei */
-
     section#about {
       overflow: clip;
     }
@@ -122,22 +107,24 @@
       }
     }
 
-    /* ... aufzählung */
-    ul.custom-icons {
-      list-style: none;
-      padding-left: 0;
+
+    h5 {
+      font-size: 1.2em;
+      font-weight: bold;
     }
 
-    ul.custom-icons li {
-      position: relative;
-      padding-left: 24px;
+    .card {
+      margin-bottom: 30px;
+      box-shadow: 3px 3px 4px 4px #00000040;
     }
 
-    ul.custom-icons li::before {
-      content: '...';
-      position: absolute;
-      left: 0;
-      top: 0;
+    #aktivitaeten .cover {
+      max-height: 5em;
+      max-width: 100%;
+    }
+
+    #buecher img {
+      max-height: 15em;
     }
 
 
@@ -150,95 +137,155 @@
       xxl: 1400px
     */
 
-    /* Aktivitäten-Karten */
-    #aktivitaeten .card {
-      height: unset;
+    #onlineangebote {
+      p, h5 {
+        /*height: unset;*/
+      }
+    }
+    #angebote {
+      p, h5 {
+        /*height: unset;*/
+      }
+    }
+    #aktivitaeten {
+      h5 {
+        /*height: unset;*/
+      }
+    }
+    #buecher {
+      .buchtitel {
+        /*height: 7.5em;*/
+      }
     }
 
     @media (min-width: 576px) {
-      #aktivitaeten .card {
-        height: 19em;
+      #onlineangebote {
+        h5 {
+          height: 3em;
+        }
+        p {
+          height: 3em;
+        }
+      }
+      #angebote {
+        h5 {
+          height: 3em;
+        }
+        p {
+          height: 8em;
+        }
+      }
+      #angebote p {
+        height: 8em;
+      }
+      #aktivitaeten {
+        h5 {
+          height: 3em;
+        }
+        .linktext {
+          height: 4.5em;
+        }
+      }
+      #buecher .buchtitel {
+        height: 7.5em;
       }
     }
 
     @media (min-width: 768px) {
-      #aktivitaeten .card {
-        height: 19em;
+      #onlineangebote {
+        h5 {
+          height: 3em;
+        }
+        p {
+          height: 3em;
+        }
+      }
+      #angebote {
+        p {
+          height: 8em;
+        }
+      }
+      #aktivitaeten  {
+        h5 {
+          height: 3em;
+        }
+        .linktext {
+          height: 4.5em;
+        }
+      }
+      #buecher .buchtitel {
+        height: 6em;
       }
     }
 
     @media (min-width: 992px) {
-      #aktivitaeten .card {
-        height: 19em;
+      #onlineangebote {
+        h5 {
+          height: 4.5em;
+        }
+        p {
+          height: 4.5em;
+        }
+      }
+      #angebote {
+        p {
+          height: 10em;
+        }
+      }
+      #aktivitaeten {
+        h5 {
+          height: 3em;
+        }
+        .linktext {
+          height: 6em;
+        }
+      }
+      #buecher .buchtitel {
+        height: 4.5em;
       }
     }
 
     @media (min-width: 1200px) {
-      #aktivitaeten .card {
-        height: 18em;
+      #onlineangebote {
+        h5 {
+          height: 3em;
+        }
+        p {
+          height: 3em;
+        }
+      }
+      #angebote {
+        p {
+          height: 8em;
+        }
+      }
+      #aktivitaeten {
+        h5 {
+          height: 3em;
+        }
+        .linktext {
+          height: 4.5em;
+        }
+      }
+      #buecher .buchtitel {
+        height: 4.5em;
       }
     }
 
     @media (min-width: 1400px) {
-      #aktivitaeten .card {
-        height: 18em;
+      #aktivitaeten {
+        h5 {
+          height: 3em;
+        }
+        .linktext {
+          height: 4.5em;
+        }
+      }
+      #buecher .buchtitel {
+        height: 3em;
       }
     }
 
-    #aktivitaeten .cover {
-      max-height: 5em;
-      max-width: 100%;
-    }
-
-
-    /* Angebote-Karten */
-    #angebote p {
-      height: unset;
-    }
-
-    @media (min-width: 576px) {
-      #angebote p {
-        height: 8em;
-      }
-      #angebote p.kurz {
-        height: 3.6em;
-      }
-    }
-
-    @media (min-width: 768px) {
-      #angebote p {
-        height: 10em;
-      }
-      #angebote p.kurz {
-        height: 9.4em;
-      }
-    }
-
-    @media (min-width: 992px) {
-      #angebote p.kurz {
-        height: 7.1em;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      #angebote p.kurz {
-        height: 9.4em;
-      }
-    }
-    /*#angebote p.kurz {*/
-    /*  height: unset;*/
-    /*}*/
-
-    #angebote h5, #aktivitaeten h5 {
-      font-size: 1.2em;
-      font-weight: bold;
-      height: 2.5em;
-    }
-
-    #angebote .card, #aktivitaeten .card {
-      margin-bottom: 30px;
-      box-shadow: 3px 3px 4px 4px #00000040;
-    }
   </style>
 </head>
 <body>
@@ -261,12 +308,13 @@
     </div>
     <hr>
     <nav class="row d-flex justify-content-between align-items-center gx-0">
-      <p class="col-6 col-sm-2 text-center"><a href="#about" class="nav-link text-white">Über mich</a></p>
-      <p class="col-6 col-sm-2 text-center"><a href="#glaube" class="nav-link text-white">Glaube</a></p>
-      <p class="col-6 col-sm-2 text-center"><a href="#aktivitaeten" class="nav-link text-white">Aktivitäten</a></p>
-      <p class="col-6 col-sm-2 text-center"><a href="#angebote" class="nav-link text-white">Angebote</a></p>
-      <p class="col-6 col-sm-2 text-center"><a href="#schwerpunkte" class="nav-link text-white">Schwerpunkte</a></p>
-
+      <p class="col-6 col-sm-3 text-center"><a href="#about" class="nav-link text-white">Über mich</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#glaube" class="nav-link text-white">Glaube</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#onlineangebote" class="nav-link text-white">Onlineangebote</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#angebote" class="nav-link text-white">Frag mich an!</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#buecher" class="nav-link text-white">Bücher</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#aktivitaeten" class="nav-link text-white">Aktivitäten</a></p>
+      <p class="col-6 col-sm-3 text-center"><a href="#schwerpunkte" class="nav-link text-white">Schwerpunkte</a></p>
     </nav>
   </div>
 </header>
@@ -326,9 +374,8 @@
   </div>
 </section>
 
-
 <!-- Über mich -->
-<section id="about" class="about-section bg-light">
+<section id="about" class="about-section">
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-6 col-md-7 col-lg-8 py-5 pe-5">
@@ -360,15 +407,15 @@
 </section>
 
 <!-- Glaube -->
-<section id="glaube" class="py-5 bg-gray">
+<section id="glaube" class="py-5">
   <div class="container">
-    <div class="row bg-gray">
+    <div class="row">
       <div class="col-12 py-5">
         <h1>
           Ich glaube …
           <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
         </h1>
-        <ul class="custom-icons">
+        <ul class="dots-icons">
           <li>dass das Geheimnis der Wirklichkeit Liebe ist und sich in Jesus Christus ein Gesicht
             gegeben hat.
           </li>
@@ -380,227 +427,70 @@
   </div>
 </section>
 
-<!-- Aktivitäten -->
-<section id="aktivitaeten" class="py-5 bg-light">
+<!-- Onlineangebote -->
+<section id="onlineangebote" class="py-5">
   <div class="container">
     <h1>
-      Aktivitäten
+      Onlineangebote
       <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
     </h1>
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
+        <div class="card risse">
           <div class="card-body">
-            <h5 class="card-title">Mein Auftritt bei Hausverbot im Beichtstuhl</h5>
-            <a href="https://www.podcast.de/episode/689299359/019-angst-vor-der-hoelle-nicht-mit-jesus-interview-mit-martin-thoms" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-hausverbot-im-beichtstuhl.png"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                #019 - Angst vor der Hölle? Nicht mit Jesus! Interview mit Martin Thoms
-              </div>
+            <h5 class="card-title">„Es ist vollbracht! … Oder doch nicht?“</h5>
+            <p class="text">
+              Der 10-Wochen-Onlinekurs zur Allversöhnung
+            </p>
+            <a href="onlinekurs-vollbracht.html">
+              <button class="btn btn-dark mt-3">
+                Zum Onlinekurs
+              </button>
             </a>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
+        <div class="card rot">
           <div class="card-body">
-            <h5 class="card-title">Mein 3. Auftritt beim Movecast</h5>
-            <a href="https://movecast.de/reicher-mann-und-armer-lazarus-lukas-16-allversoehnung-4/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-movecast-204.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                MC 204: Reicher Mann und armer Lazarus (Lukas 16) – Allversöhnung 4
-              </div>
+            <h5 class="card-title">„Wo ist Gott?“</h5>
+            <p class="text">
+              Der 10-Wochen-Onlinekurs zur Kreuzestheologie
+            </p>
+            <a href="onlinekurs-wo-ist-gott.html">
+              <button class="btn btn-dark mt-3">
+                Zum Onlinekurs
+              </button>
             </a>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
+        <div class="card risse">
           <div class="card-body">
-            <h5 class="card-title">Mein 2. Auftritt beim Movecast</h5>
-            <a href="https://movecast.de/mc-203-das-gericht-ueber-schafe-und-boecke-mt-25-allversoehnung-3/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-movecast-203.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                MC 203: Das Gericht über Schafe und Böcke (Mt.25) – Allversöhnung 3
-              </div>
+            <h5 class="card-title">„Es ist vollbracht! … Oder doch nicht?“</h5>
+            <p class="text">
+              Der Studientag zur Allversöhnung
+            </p>
+            <a href="studientag.html" style="text-decoration: none;">
+              <button class="btn btn-dark mt-3">
+                Zum Studientag
+              </button>
             </a>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
+        <div class="card gold">
           <div class="card-body">
-            <h5 class="card-title">Mein 3. Auftritt bei Hossa-Talk</h5>
-            <a href="https://hossa-talk.de/258-es-ist-vollbracht-oder-doch-nicht-m-martin-thoms-teil-2/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-hossa-talk-258.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                #258 Es ist vollbracht! Oder doch nicht? Teil 2
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein 1. Auftritt beim Movecast</h5>
-            <a href="https://movecast.de/mc-199-allversoehnung-duerfen-wir-sie-glauben/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-movecast-199.png"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                MC 199: Allversöhnung – dürfen wir sie glauben?
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein 2. Auftritt bei Hossa-Talk</h5>
-            <a href="https://hossa-talk.de/257-es-ist-vollbracht-oder-doch-nicht-m-martin-thoms-teil-1/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-hossa-talk-257.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                #257 Es ist vollbracht! Oder doch nicht? Teil 1
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein neues Buch</h5>
-            <a href="https://www.eva-leipzig.de/de/es-ist-vollbracht-oder-doch-nicht-2" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-es-ist-vollbracht-oder-doch-nicht.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                »Es ist vollbracht!« Oder doch nicht? –
-                Antwortversuche auf Einwände zur Fantasie der Allversöhnung
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein 1. Auftritt bei Hossa-Talk</h5>
-            <a href="https://hossa-talk.de/234-der-gottverlassene-gott-m-martin-thoms/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-hossa-talk-234.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                #234 Der gottverlassene Gott
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Mein 1. Buch</h5>
-            <a href="https://lit-verlag.de/isbn/978-3-643-15720-1/" target="_blank" rel="noopener noreferrer">
-              <img
-                src="img/cover-der-gottverlassene-gott.jpg"
-                title="Coverbild"
-                alt="Coverbild"
-                class="cover mx-auto d-block my-3"
-              />
-              <div>
-                Der gottverlassene Gott
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Predigt in Würzburg</h5>
-            <a href="https://www.youtube.com/watch?v=kduX545Oomg&t=7s" target="_blank" rel="noopener noreferrer">
-              <img
-                  src="img/cover-diese-drei.jpg"
-                  title="Coverbild"
-                  alt="Coverbild"
-                  class="cover mx-auto d-block my-3"
-              />
-              <div>
-                Diese drei. 2) Der gottverlassene Gott | Martin Thoms
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Blogeintrag bei Lepanto</h5>
-            <a href="https://www.lepanto-verlag.de/der-gottverlassene-gott" target="_blank" rel="noopener noreferrer">
-              <img
-                  src="img/cover-lepanto.jpg"
-                  title="Coverbild"
-                  alt="Coverbild"
-                  class="cover mx-auto d-block my-3"
-              />
-              <div>
-                Der gottverlassene Gott | LOGBUCH | Lepanto Verlag
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Instagram</h5>
-            <a href="https://www.instagram.com/martinthoms.de/" target="_blank" rel="noopener noreferrer">
-              <img
-                  src="img/cover-instagram.png"
-                  title="Coverbild"
-                  alt="Coverbild"
-                  class="cover mx-auto d-block my-3"
-              />
-              <div>
-                @martinthoms.de
-              </div>
+            <h5 class="card-title">ZEHN</h5>
+            <p class="text">
+              Ein Jahr, das dich verändert.
+            </p>
+            <a href="coaching.html" style="text-decoration: none;">
+              <button class="btn btn-dark mt-3">
+                Zum Coaching
+              </button>
             </a>
           </div>
         </div>
@@ -610,36 +500,13 @@
 </section>
 
 <!-- Angebote -->
-<section id="angebote" class="py-5 bg-gray">
+<section id="angebote" class="py-5">
   <div class="container">
     <h1>
-      Angebote
+      Frag mich an!
       <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
     </h1>
     <div class="row">
-      <div class="col-12 col-sm-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Theologie für Interessierte</h5>
-            <p class="kurz">
-              Onlinekurse und Studientage
-
-              <!--Der 10-Wochen-Onlinekurs zur Allversöhnung:<br>
-              „Es ist vollbracht! … oder doch nicht?“-->
-            </p>
-            <a href="studientag.html" style="text-decoration: none;">
-              <button class="btn btn-dark mt-3">
-                Zum Studientag
-              </button>
-            </a>
-            <a href="onlinekurs.html">
-              <button class="btn btn-dark mt-3">
-                Zum Onlinekurs
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card">
           <div class="card-body">
@@ -695,9 +562,231 @@
   </div>
 </section>
 
+<!-- Bücher -->
+<section id="buecher" class="py-5">
+  <div class="container">
+    <h1>
+      Bücher
+      <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
+    </h1>
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein neues Buch</h5>
+            <a href="https://www.eva-leipzig.de/de/es-ist-vollbracht-oder-doch-nicht-2" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-es-ist-vollbracht-oder-doch-nicht.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="buchtitel">
+                »Es ist vollbracht!« Oder doch nicht? –
+                Antwortversuche auf Einwände zur Fantasie der Allversöhnung
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 1. Buch</h5>
+            <a href="https://lit-verlag.de/isbn/978-3-643-15720-1/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-der-gottverlassene-gott.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="buchtitel">
+                Der gottverlassene Gott
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Aktivitäten -->
+<section id="aktivitaeten" class="py-5">
+  <div class="container">
+    <h1>
+      Aktivitäten
+      <a href="#page-top" class="text-gray text-decoration-none fw-bold">&uarr;</a>
+    </h1>
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein Auftritt bei Hausverbot im Beichtstuhl</h5>
+            <a href="https://www.podcast.de/episode/689299359/019-angst-vor-der-hoelle-nicht-mit-jesus-interview-mit-martin-thoms" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-hausverbot-im-beichtstuhl.png"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                #019 - Angst vor der Hölle? Nicht mit Jesus! Interview mit Martin Thoms
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 3. Auftritt beim Movecast</h5>
+            <a href="https://movecast.de/reicher-mann-und-armer-lazarus-lukas-16-allversoehnung-4/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-movecast-204.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                MC 204: Reicher Mann und armer Lazarus (Lukas 16) – Allversöhnung 4
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 2. Auftritt beim Movecast</h5>
+            <a href="https://movecast.de/mc-203-das-gericht-ueber-schafe-und-boecke-mt-25-allversoehnung-3/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-movecast-203.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                MC 203: Das Gericht über Schafe und Böcke (Mt.25) – Allversöhnung 3
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 3. Auftritt bei Hossa-Talk</h5>
+            <a href="https://hossa-talk.de/258-es-ist-vollbracht-oder-doch-nicht-m-martin-thoms-teil-2/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-hossa-talk-258.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                #258 Es ist vollbracht! Oder doch nicht? Teil 2
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 1. Auftritt beim Movecast</h5>
+            <a href="https://movecast.de/mc-199-allversoehnung-duerfen-wir-sie-glauben/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-movecast-199.png"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                MC 199: Allversöhnung – dürfen wir sie glauben?
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 2. Auftritt bei Hossa-Talk</h5>
+            <a href="https://hossa-talk.de/257-es-ist-vollbracht-oder-doch-nicht-m-martin-thoms-teil-1/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-hossa-talk-257.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                #257 Es ist vollbracht! Oder doch nicht? Teil 1
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mein 1. Auftritt bei Hossa-Talk</h5>
+            <a href="https://hossa-talk.de/234-der-gottverlassene-gott-m-martin-thoms/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-hossa-talk-234.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                #234 Der gottverlassene Gott
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Predigt in Würzburg</h5>
+            <a href="https://www.youtube.com/watch?v=kduX545Oomg&t=7s" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-diese-drei.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                Diese drei. 2) Der gottverlassene Gott | Martin Thoms
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Blogeintrag bei Lepanto</h5>
+            <a href="https://www.lepanto-verlag.de/der-gottverlassene-gott" target="_blank" rel="noopener noreferrer">
+              <img
+                src="img/cover-lepanto.jpg"
+                title="Coverbild"
+                alt="Coverbild"
+                class="cover mx-auto d-block my-3"
+              />
+              <div class="linktext">
+                Der gottverlassene Gott | LOGBUCH | Lepanto Verlag
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Schwerpunkte -->
-<section id="schwerpunkte" class="about-section bg-light">
+<section id="schwerpunkte">
   <div class="container-fluid px-5">
     <div class="row pt-5">
       <div class="col-12 py-3 text-center">
