@@ -97,3 +97,7 @@ ul.dots-icons li::before {
   left: 0;
   top: 0;
 }
+
+.veraltet {
+  text-decoration: line-through;
+}
