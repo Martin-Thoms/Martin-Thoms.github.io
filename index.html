@@ -40,7 +40,16 @@
     /*}*/
 
 
-    /* Bildgröße hackerei */
+    .werbe-button {
+      font-size: 1em;
+    }
+    @media (min-width: 400px) {
+      .werbe-button {
+        height: 5em;
+      }
+    }
+
+      /* Bildgröße hackerei */
     section#about {
       overflow: clip;
     }
@@ -328,7 +337,7 @@
 
 <!-- Onlinekurs Werbeblock -->
 <section id="werbung"
-         class="py-3 bg-info">
+         class="py-3 bg-info risse">
   <div class="container">
     <div class="row border border-2 border-dark rounded">
       <div class="col-12 py-3 mb-0 px-5 text-center">
@@ -336,11 +345,11 @@
           Ab September gibt es wieder Online-Kurse
         </p>
       </div>
-      <div class="col-12 col-sm-6 py-2 px-5 text-center align-content-center">
+      <div class="col-12 col-lg-6 py-2 px-5 text-center align-content-center">
         <p class="text-center my-0">
           <a href="onlinekurs-wo-ist-gott.html">
-            <button class="btn btn-dark text-xxl-center"
-                    style="font-size: 1em">
+            <button class="btn btn-dark text-xxl-center w-75 werbe-button"
+                    style="font-size: 1em; height: 5em;">
               Zum Onlinekurs <br> „Wo ist Gott?“
             </button>
           </a>
@@ -348,11 +357,11 @@
           Ab 23. September dienstags
         </p>
       </div>
-      <div class="col-12 col-sm-6 py-2 px-5 text-center">
+      <div class="col-12 col-lg-6 py-2 px-5 text-center">
         <p class="text-center my-0">
           <a href="onlinekurs-vollbracht.html">
-            <button class="btn btn-dark text-xxl-center"
-                    style="font-size: 1em">
+            <button class="btn btn-dark text-xxl-center w-75 werbe-button"
+                    style="">
               Zum Onlinekurs <br> „Es ist vollbracht! … oder doch nicht?“
             </button>
           </a>
