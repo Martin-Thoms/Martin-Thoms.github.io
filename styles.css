@@ -18,6 +18,11 @@ body {
   background-size: cover;
 }
 
+.orange {
+  background: url("/img/hintergrund-orange.jpeg") no-repeat fixed center;
+  background-size: cover;
+}
+
 .risse {
   background: linear-gradient(#fff8, #fff8), url("/img/hintergrund-grau-gold.jpeg") no-repeat fixed center;
   background-size: cover;
