@@ -16,8 +16,17 @@
   <link rel="icon"
         href="/favicon.png"
         type="image/png">
+  <!-- jsDelivr  -->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+
+  <!-- UNPKG -->
+  <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
+
 </head>
-<body>
+<body class="bg-dark">
+
+<div class="container fireworks" style="position: absolute; top: 0; width: 100%; height: 100%;">
+</div>
 
 <header id="page-top"
         class="bg-dark text-white">
@@ -156,5 +165,18 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+<!-- Usage -->
+<!-- siehe https://fireworks.js.org/ -->
+<!-- doku: https://github.com/crashmax-dev/fireworks-js/?tab=readme-ov-file#documentation -->
+<script>
+  const container = document.querySelector('.fireworks');
+  const fireworks = new Fireworks.default(container);
+  fireworks.start();
+  // nach 5000 millisekunden wird das Feuerwerk weniger.
+  setTimeout(() => {
+    fireworks.updateOptions({intensity: 5}); // Startwert für intensity ist 30 oder so, wir reduzieren auf 5
+  }, 5000);
+</script>
 </body>
 </html>
