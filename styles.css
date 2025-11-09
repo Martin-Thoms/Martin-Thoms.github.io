@@ -42,6 +42,11 @@ section:nth-of-type(2n) {
   background-color: #00000010;
 }
 
+section.bg-dark:nth-of-type(2n+1) {
+  background-color: #101010 !important;
+}
+
+
 .text-gray {
   color: #cccccc;
 }
