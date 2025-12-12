@@ -10,6 +10,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="/favicon.png" type="image/png">
+
+  <!-- jsDelivr  -->
+  <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
   <style>
     body {
       background-color: #f8f9fa;
@@ -522,6 +525,22 @@
             <a href="onlinekurs-brennpunkte.html">
               <button class="btn btn-dark mt-3">
                 Zum Onlinekurs
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card bg-dark text-white">
+          <div class="card-body">
+            <h5 class="card-title">Neujahrsangebot</h5>
+            <p class="text">
+              40 % Rabatt auf Onlinekurspaket<br>
+              <span class="fw-bold">bis 31.1.26</span>
+            </p>
+            <a href="neujahr2026.html">
+              <button class="btn btn-light mt-3">
+                Zum Angebot
               </button>
             </a>
           </div>
@@ -1385,6 +1404,21 @@
     <nobr>Bonifatiusstraße 31, 44892 Bochum</nobr>
   </p>
 </footer>
+
+
+<!-- Usage -->
+<!-- siehe https://fireworks.js.org/ -->
+<!-- doku: https://github.com/crashmax-dev/fireworks-js/?tab=readme-ov-file#documentation -->
+<script>
+  const container = document.querySelector('.fireworks');
+  const fireworks = new Fireworks.default(container);
+  fireworks.start();
+  // nach 5000 millisekunden wird das Feuerwerk weniger.
+  setTimeout(() => {
+    fireworks.updateOptions({intensity: 5}); // Startwert für intensity ist 30 oder so, wir reduzieren auf 5
+    //fireworks.waitStop(true);  // einkommentieren, damit es aufhört
+  }, 5000);
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
