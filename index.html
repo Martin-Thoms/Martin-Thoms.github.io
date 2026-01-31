@@ -169,6 +169,9 @@
       .buchtitel {
         /*height: 7.5em;*/
       }
+      .card-title {
+        height: 2em;
+      }
     }
 
     @media (min-width: 576px) {
@@ -259,9 +262,6 @@
       #buecher .buchtitel {
         height: 4.5em;
       }
-      #buecher .card-title {
-        height: 2em;
-      }
     }
 
     @media (min-width: 1200px) {
@@ -342,8 +342,41 @@
 </header>
 
 
-<!-- Onlinekurs Werbeblock Brennpunkte -->
+<!-- Werbeblock Ebook -->
 <section id="werbung"
+         class="bg-white py-3">
+  <div class="container">
+    <div class="row border border-2 border-dark rounded p-3">
+      <div class="col-12 col-sm-5 col-md-6 text-center" id="banner-bild">
+        <img
+          src="img/cover-ebook.png"
+          title="Ebook"
+          alt="Ebook"
+          style="max-height: 15em; max-width: 100%"
+        />
+      </div>
+      <div class="col-12 col-sm-7 col-md-6 p-3 py-lg-5 d-flex flex-column text-center" id="banner-text">
+        <h1 class="">
+          Neu: Ebook
+          <a href="https://copecart.com/products/e3bff684/checkout" target="_blank" rel="noopener noreferrer">
+            "100 Argumente für die Allversöhnung"
+          </a>
+        </h1>
+        <p class="">
+          <a href="#buecher">
+            <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
+              Zum den Büchern
+            </button>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- section class kann zb sein: risse, orange, bg-info -->
+<!-- Onlinekurs Werbeblock 1 Kurs -->
+<!--section id="werbung"
          class="orange py-3">
   <div class="container">
     <div class="row border border-2 border-dark rounded">
@@ -366,7 +399,7 @@
       </div>
     </div>
   </div>
-</section>
+</section-->
 
 
 <!-- Onlinekurs Werbeblock 2 Kurse -->
@@ -403,59 +436,6 @@
   </div>
 </section-->
 
-
-<!--section id="werbung" class="py-3 bg-info">
-  <div class="container">
-    <div class="row border border-2 border-dark rounded">
-      <div class="col-12 py-3 px-5 text-center">
-        <p class="small">
-          06. Mai – 08. Juli 2025, jeweils dienstags 19:00 – 21:00 Uhr (digital)
-        </p>
-        <h2>
-          „Es ist vollbracht! … oder doch nicht?“
-          <br>
-          Der 10-Wochen-Onlinekurs
-        </h2>
-        <p class="mb-0">
-          Eine Reise durch die spannendste Debatte der Theologie
-        </p>
-        <p class="text-center mt-3 mb-0">
-          <a href="onlinekurs.html">
-            <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
-              Zum Onlinekurs
-            </button>
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section-->
-
-<!-- Studientag Werbeblock -->
-<!--section id="werbung-studientag" class="py-3">
-  <div class="container">
-    <div class="row border border-2 border-white rounded">
-      <div class="col-12 py-3 px-5 text-center">
-        <p class="small">
-          Samstag, 19. Juli 2025 von 10:00 – 18:00 Uhr (digital)
-        </p>
-        <h1 class="pb-4">
-          Studientag Allversöhnung
-        </h1>
-        <p class="mb-0">
-          Eine Reise durch die spannendste Debatte der Theologie
-        </p>
-        <p class="text-center mt-3 mb-0">
-          <a href="studientag.html">
-            <button class="btn btn-dark text-xxl-center" style="font-size: 1em">
-              Zum Studientag
-            </button>
-          </a>
-        </p>
-      </div>
-    </div>
-  </div>
-</section-->
 
 <!-- Über mich -->
 <section id="about" class="about-section">
@@ -533,7 +513,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-sm-6 col-lg-4">
+      <!--div class="col-12 col-sm-6 col-lg-4">
         <div class="card bg-dark text-white">
           <div class="card-body">
             <h5 class="card-title">Neujahrsangebot</h5>
@@ -548,7 +528,7 @@
             </a>
           </div>
         </div>
-      </div>
+      </div-->
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="card risse">
           <div class="card-body">
